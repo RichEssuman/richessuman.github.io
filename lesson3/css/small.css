@@ -1,0 +1,26 @@
+html{
+	background-color: burlywood;
+	font-family: 'Times New Roman', Times, serif;
+}
+body{
+	background-size: cover;
+	background-position: center; 
+	background-image: url(background.jpg);
+}
+.menu bar{
+	background-color: chartreuse;
+	text-align: center;
+}
+.menu bar nav ul li{
+	display: inline-flex;
+	list-style: none;
+	color: whitesmoke;
+	box-sizing: border-box;
+}
+
+footer {
+    color: black;
+    padding: 0.5rem;
+	text-align: center;
+	
+  }
