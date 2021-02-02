@@ -1,26 +1,49 @@
-html{
+html {
 	background-color: burlywood;
 	font-family: 'Times New Roman', Times, serif;
+	font-size: 17px;
+	max-height: 100px;
 }
-body{
-	background-size: cover;
-	background-position: center; 
-	background-image: url(background.jpg);
-}
-.menu bar{
-	background-color: chartreuse;
+h1 {
+	background-color: azure;
+	font-weight: bolder;
+	padding: 1.0rem;
 	text-align: center;
 }
-.menu bar nav ul li{
+nav ul li a{
+	display: flex;
+	color: blueviolet;
+	padding: 0.70rem;
+	text-decoration: none;
+	flex-flow: column;
+	text-decoration: underline;
+	cursor: pointer;
+
+}
+nav a:hover {
+	background-color: cadetblue;
+}
+nav a {
+	text-align: center;
+	background-color: blanchedalmond;
+}
+nav ul li {
 	display: inline-flex;
 	list-style: none;
-	color: whitesmoke;
-	box-sizing: border-box;
+	padding: auto;
+	margin: 0;
+	text-decoration: underline;
+	cursor: pointer;
 }
+
 
 footer {
     color: black;
     padding: 0.5rem;
+	text-align: center;	 
+}
+header, nav, main, footer {
+	max-width: 100%;
+	margin: 1.4rem;
 	text-align: center;
-	
-  }
+}
