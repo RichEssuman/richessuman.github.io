@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en=us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather News</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css/small.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <b>Breezing Forecast Report</b>
+        </h1>
+        <p>Be Mindful of the Weather</p>
+        <img src="images/Weather (1).png" alt="weather logo">
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="localNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Hero w/ weather summary</h2>
+        </section>
+        <section>
+            <h2>5 Day Forecast</h2>
+        </section>
+        <section>
+            <h2>Article</h2>
+        </section>
+            <h2>Contact Information</h2>
+        </section>
+    </main>
+    <footer>
+        &copy <span id="year">2021</span>
+            | Richard Essumang | South Africa | 
+            <a id="byuiLink" href="https://www.byui.edu/online">BYUI Online Learning</a>
+            <br>
+        <span id="Date">Last Updated: Sunday, January 24, 2021</span>
+    </footer>
+    <script src="script.js/script.js"></script>
+</body>
+</html>
