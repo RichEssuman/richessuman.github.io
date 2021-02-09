@@ -1,30 +1,23 @@
-let daynames = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"];
+const menubutton = document.querySelector('.menu');
+const mainnav = document.querySelector('.navBar');
 
-let monthes = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"];
-    
-let d = new Date();
-let dayName = daynames[d.getDay()];
-let monthName = monthes[d.getMonth()];
-let year =  d.getFullYear();
-let fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + year;
+menubutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+const dayNames = [
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
+];
+const months = [
+    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",
+];
+const todaysdate = new Date();
+const dayName = dayNames[todaysdate.getDay()];
+const monthName = months[todaysdate.getMonth()];
+const currentdate = dayName + ", " + todaysdate.getDate() + " " + monthName + " " + todaysdate.getFullYear();
 
-document.getElementById("currentdate").textContent = fulldate;
+document.getElementById('date').textContent = currentdate;
+
+var Now = new Date();
+var CurrentDay = Now.getDay();
+var aside = document.getElementById("alertContainer")
+if (CurrentDay == 5) {
+  aside.style.display = (aside.style.display == 'block') ? 'none' : 'block';
+}
