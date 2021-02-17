@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem){
+@media only screen and (min-width: 48em){
     nav{
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+100,aa0000+100 */
     background: #a90329; /* Old browsers */
@@ -7,21 +7,25 @@
     background: linear-gradient(to bottom,  #a90329 0%,#8f0222 100%,#aa0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
     }
-    {
-    nav button {display: none;}  
+    header{
+        grid-template-columns: 13% 1fr;
+        grid-template-rows: 150px;
     }
-    nav ul.hide{
-        display: block;
+    h1{
+        font-size: 400%;
     }
-    nav ul li {
-        margin-left: 2%;
+    nav{
+        height: 35px;    
     }
-    nav ul li {
-        float: left;
+    #motto{
+        font-size:150%;
     }
-    nav ul li a{
-        border: none;
-        border-right: 1px solid;
-        padding: 0.6rem 1rem;
+    #logo{
+        position: relative;
+        left: 50;
+        right: 50;
     }
-}  
+    #mapImg{
+        max-width:30%;
+    }
+}
