@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Images</title>
+    <link rel="stylesheet" href="styles.css/lazy.css">
+</head>
+<body>
+    <main>
+        <h1>Progressive Image Loading</h1>
+        <picture>
+            <img src="images/s_lake.jpg" data-src="data/images/s_lake.jpg" alt="SaltLakeTemple">
+        </picture>
+        <picture>
+            <img src="images/temple1.jpg" data-src="data/images/temple1.jpg" alt="HolinessToTheLord">
+        </picture>
+        <picture>
+            <img src="images/font1.jpg" data-src="data/images/font1.jpg" alt="baptismalFont">
+        </picture>
+        <picture>
+            <img src="images/inner1.jpg" data-src="data/images/inner1.jpg" alt="innerMostRoom">
+        </picture>
+        <picture>
+            <img src="images/building1.jpg" data-src="data/images/building1.jpg" alt="templeBuilding">
+        </picture>
+        <picture>
+            <img src="images/room1.jpg" data-src="data/images/room1.jpg" alt="reception">
+        </picture>
+    </main>
+    <script type="text/javascript" src="script.js/image_lazy.js"></script>
+</body>
+</html>
