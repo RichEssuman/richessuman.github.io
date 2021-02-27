@@ -8,49 +8,53 @@
     <title>Table Practice</title>
 </head>
 <body>
-  <main>
-    <h2>ACME Wildwest</h2>
-    <table id="t01">
-      <thead>
-        <td>Period</td>
-        <td>Sales</td>
-        <td>Sales Goal</td>
-      </thead>
-      <tr>
-        <td>August</td>
-        <td>$3,590</td>
-        <td>$4,000</td>
-      </tr>
-      <tr>
-        <td>September</td>
-        <td>$4,420</td>
-        <td>$5,000</td>
-      </tr>
-      <tr>
-        <td>October</td>
-        <td>$4,870</td>
-        <td>$5,000</td>
-      </tr>
-      <tr>
-        <td>November</td>
-        <td>$8,610</td>
-        <td>$7,500</td>
-      </tr>
-      <tr id="nov">
-        <td>Black Friday</td>
-        <td colspan="2">$8,610</td>
-      </tr>
-      <tr>
-        <td>December</td>
-        <td>$6,820</td>
-        <td>$7,500</td>
-      </tr>
-    </table>
-   <tfoot>
-      <tr>
-        <td>Compiled 26.02.2021 by Richard</td>
-      </tr>  
-    </tfoot>
-  </main>  
+	<table>
+		<thead>
+			<tr>
+				<th colspan="3">ACME Wildwest</th>
+			</tr>
+			<tr id="blue">
+				<th>Period</th>
+				<th>Sales</th>
+				<th>Sales Goal</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>August</td>
+				<td>$3,590</td>
+				<td>$4,000</td>
+			</tr>
+			<tr>
+				<td>September</td>
+				<td>$4,420</td>
+				<td>$5,000</td>
+			</tr>
+			<tr>
+				<td>October</td>
+				<td>$4,870</td>
+				<td>$5,000</td>
+			</tr>
+			<tr>
+				<td>November</td>
+				<td>$8,610</td>
+				<td id="nov">$7,500</td>
+			</tr>
+			<tr class="curs">
+				<td>Black Friday</td>
+				<td colspan="2">$3,200</td>
+			</tr>
+			<tr>
+				<td>December</td>
+				<td>$6,820</td>
+				<td>$7,500</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3">Compiled by Richard</td>
+			</tr>
+		</tfoot>
+	</table>	
 </body>
 </html>
