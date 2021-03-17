@@ -1,0 +1,138 @@
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Forecast</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body onload="getChilled()">
+    <aside id="pancakes" style="display: none;">
+        <p id="alert">Saturday = Preston Park Pizza!<br>
+            1:00 p.m. Saturday at the city park.</p>
+    </aside>
+    <header>
+        <a href="#"><img src="images/Weather (1).png" alt="pic" id="logo"></a>
+        <section class="headings">
+            <h1>Breezing Forecast</h1>
+            <div id="motto"><em>Be Mindful of the Weather!</em></div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navBar">
+            <li><a class="menu" href="#"><div class="linkName">&#9776; Menu</div></a></li>
+            <li><a href="#" id="home"><div class="linkName">Home</div></a></li>
+            <li><a href="#" id="preston"><div class="linkName" class="active">Preston</div></a></li>
+            <li><a href="#" id="sodasprings"><div class="linkName">Soda Springs</div></a></li>
+            <li><a href="#fish haven" >Fish Haven</div></a></li>
+            <li><a href="stormcenter.html" >Storm Center</div></a></li>
+            <li><a href="gallery-7.html" >Gallery</div></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="heroDiv">
+            <picture>
+                <source srcset="images/head.jpg" media="(min-width:60em)">
+                <source srcset="images/head.jpg" media="(min-with:32.5em) and (max-width:60em)"> 
+                <img id="heroImg" src="images/head.jpg" alt="cover">
+            </picture>
+            <section class="stats">
+                <h2 id="summary">Current Weather</h2>
+                <div id="sumContent">
+                    <span id="imagesrc"><img src="" alt="" id="icon"></span>
+                    <!--<p id="current">Currently:</p>-->
+                    <p><span id="currently"></span></p>
+                    <p id="temp">Temperature:</p>
+                    <p><span id="current-temp"></span> &#8457;</p>
+                    <p id="windch">Wind Chill:</p>
+                    <p><span id="wind_chill"></span> &#8457;</p>
+                    <p id="humid">Humidity: </p>
+                    <p><span id="humidity"></span> %</p>
+                    <p id="winds">Wind Speed:</p>
+                    <p><span id="wind_speed"></span> mph</p>
+                </div>
+            </section>
+        </div>
+        <div class="fiveDay">
+            <h3>5-Day Forecast</h3>
+           
+            <table>
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">78&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">81&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">83&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">80&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">77&#176;F</td>
+                </tr>
+              </table>
+        </div>
+        <div class="article">
+            <img id="articleImg" src="images/foundersday2014.jpg" alt="foundersDay">
+            <h2>Founders Day Celebrations</h2>
+            <h4 id="author">by Author's name</h4>
+            <p id="articleContent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
+                inventore! Velit blanditiis, dolor fugiat quis voluptas eveniet 
+                consectetur corporis odit labore ipsum dolorem dolore quod 
+                aliquid eos saepe id, eius unde magnam, rerum sint nobis sapiente! 
+                Delectus illum, laudantium error, mollitia amet excepturi 
+                ratione iure totam debitis obcaecati, saepe sit numquam ipsa 
+                ab fuga unde sint voluptas neque est praesentium optio quidem 
+                vel porro possimus? Unde, dolores repellendus voluptate, praesentium
+                molestiae deserunt tempora inventore cum veniam assumenda facere 
+                sapiente quia hic reiciendis mollitia atque vitae consequatur, 
+                omnis necessitatibus? Voluptatibus, consequuntur. Distinctio 
+                neque sequi qui animi! Incidunt repellendus molestias id quisquam 
+                obcaecati aliquam nobis nemo consequuntur, soluta eveniet dolores 
+                perspiciatis tempore omnis deleniti laborum saepe iure minus 
+                suscipit neque velit deserunt cum nihil ab? Sed eius laboriosam 
+                incidunt dicta fugiat excepturi corrupti possimus culpa nobis ullam, 
+                nulla, in officia itaque officiis nisi enim consequatur, praesentium 
+                impedit saepe ex? Quas, ut culpa alias incidunt nam iste similique 
+                officia. Quidem similique modi quam molestiae reiciendis consequuntur 
+                consequatur nulla at iure sed! Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Tempora, nobis ipsam fuga eligendi corrupti explicabo 
+                provident placeat iure, eveniet sunt minus. Consequatur, magnam. Repellendus, ipsam.
+            </p>
+        </div>
+        <div class="sections mapbox">
+            <img id="map" src="images/bearLake.png" alt="city info">
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <h3>Breezing Forecast</h3>
+
+                <p>📍 30 N 1st E<br>
+                    Preston, ID 82363<br>
+                    📧 <a href="info@breezing.forecast.com">info@breezing.forecast.com</a><br>
+                    📞 001-123-56789</p><br>
+            </section>
+        </div>
+    </main>
+    <footer> &copy;2021 | Weather data obtained from <a href="https://openweathermap.org/"> OpenWeatherMap.org</a>
+        | Richard Essumang <br>
+        South Africa | <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br>
+        <div id="updated"><span id="currentdate"></span></div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/chill.js"></script>
+    <script src="js/weatherapi.js"></script>
+</body>
+
+</html>
