@@ -59,8 +59,7 @@ home.forEach(town => {
 });
 
 
-  });
-
+});
 
 
 
