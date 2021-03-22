@@ -1,0 +1,261 @@
+body {
+    font-size: 16px;
+    margin: 0 a;
+    padding: 0 auto;
+    background-color: rgb(218, 240, 214);
+    font-family: 'Times New Roman', Times, serif;
+}
+main {
+    background-color: rgb(213, 66, 233);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 860px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header,
+footer {
+    background-color: rgb(219, 152, 152);
+    color: rgb(95, 30, 30);
+    border: 12px rgb(170, 184, 248);
+    border-radius: 3px;
+    margin: 8px;
+    text-align: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 2px 24px;
+}
+header img {
+    width: 80px;
+    height: auto;
+    margin: 24px 10px 0 0;
+    background-color: rgb(116, 196, 140);
+}
+#logo {
+    padding-left: 1rem;
+}
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: .25rem .25rem .25rem 0;
+}
+h1,
+h2 {
+    font-size: 1.8rem;
+    padding: .75rem;
+    margin: 0 0 0 2px;
+    text-align: center;
+    text-shadow: 3px 3px 5px #777;
+}
+.motto {
+    font-style: italic;
+    letter-spacing: 0.5pt;
+    color: rgb(40, 156, 131);
+    margin-left: 10px;
+    font-size: 1.5px;
+    margin-bottom: 20px;
+}
+nav {
+    margin: 0 auto;
+    font-size: 18px;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    justify-content: center;
+}
+.navBar {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.navBar li:first-child {
+    display: block;
+}
+.navBar li {
+    display: none;
+
+}
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-top: solid rgba(212, 58, 58, 0.3);
+}
+nav a:hover {
+    color: salmon;
+    text-shadow: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+#updated {
+    font-size: 8px;
+    color: rgb(27, 121, 35);
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+footer a:visited {
+    color: rgb(170, 184, 248);
+}
+
+footer a:hover {
+    color: salmon;
+}
+
+footer {
+    padding: 12px;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+div.sections,
+div.article {
+    background-color: rgb(198, 201, 238);
+    padding: 10px;
+    border: solid 5px rgb(119, 214, 243);
+    margin: 30px;
+}
+
+div.aticle {
+    display: flex;
+}
+
+div.article img {
+    border: solid 2px;
+    margin: 12px;
+    max-height: auto;    
+}
+.fiveDay {
+    display: flex;
+}
+
+.sections img {
+    width: 100%;
+    margin: 0 auto 2rem;
+}
+.sections p {
+    padding: 1rem 1rem;
+    margin: 6px 24px;
+}
+.sections h3 {
+    padding: 1rem 1rem 0 1rem;
+    margin: 6px 24px 0 28px;
+}
+.sections ul li {
+    list-style: none;
+    padding: 6px;
+}
+.heroDiv {
+    position: relative;
+    margin: 10px auto;
+}
+.heroDiv h1,
+h2,
+p {
+    margin: .25rem auto;
+}
+.heroDiv picture img {
+    width: 100%;
+    margin: .75rem auto;
+    border: solid black 3px;
+}
+
+.sections #map {
+    display: none
+}
+
+.stats {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background: rgb(103, 105, 101);
+    padding: .25rem 1rem;
+    border: solid black 1.5px;
+    box-shadow: 0 0 20px black;
+    opacity: 82%;
+    text-align: center;
+    white-space: nowrap;
+}
+.casting{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+	background: #649294;
+	padding: 3px;
+	box-shadow: 0 0 30px #111;
+    opacity: 85%;
+    margin: 10px;
+    
+}
+#sumContent{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20px 20px 20px 20px 20px;
+    column-gap: 5px;
+    color:white;
+    font-size:12px;
+    margin-top:3px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+.leftSum{
+    grid-column: 1/1;
+    text-align:end;
+    color: red;
+}
+.rightSum{
+    grid-column: 2/2;
+    text-align:start;
+    color: white;
+}
+#Currently, #Sunny{
+    grid-row: 1/1;
+}
+
+#temperature, #temperature1{
+    grid-row: 2/2;
+}
+
+#windchill, #windchill1{
+    grid-row: 3/3;
+}
+
+#humidity, #humidity2{
+    grid-row: 4/4;
+}
+#windSpeed, #windSpeed2{
+    grid-row: 5/5;
+}
+#articleContent{
+    margin:5px;
+}
+#weatherSum{
+    color:white;
+    border-bottom:2px solid white;
+    margin-top: 3px;
+    margin-bottom:3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

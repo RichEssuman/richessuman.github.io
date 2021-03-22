@@ -1,0 +1,139 @@
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Forecast</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css/smallh.css">
+    <link rel="stylesheet" href="styles.css/mediumh.css">
+    <link rel="stylesheet" href="styles.css/largeh.css">
+    <link rel="stylesheet" href="styles.css/normalize.css">
+</head>
+
+<body onload="getChilled()">
+    <aside id="pancakes" style="display: none;">
+        <p id="alert">Saturday = Preston Park Pizza!<br>
+            1:00 p.m. Saturday at the city park.</p>
+    </aside>
+    <header>
+        <a href="#"><img src="images/Weather (1).png" alt="pic" id="logo"></a>
+        <section class="headings">
+            <h1>Breezing Forecast</h1>
+            <div id="motto"><em>Be Mindful of the Weather!</em></div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navBar">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a class="active" href="soda_s.html">Soda Springs</a></li>
+            <li><a href="fish_haven.html" >Fish Haven</a></li>
+            <li><a href="stormcenter.html" >Storm Center</a></li>
+            <li><a href="gallery.html" >Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Soda Springs, Idaho</h2>
+        <div class="heroDiv">
+            <picture>
+                <source srcset="images/sodas1.jpg" media="(min-width:60em)">
+                <source srcset="images/sodas1.jpg" media="(min-with:32.5em) and (max-width:60em)"> 
+                <img id="heroImg" src="images/sodas1.jpg" alt="cover">
+            </picture>
+            <section class="stats">
+                <h2 id="summary">Current Weather</h2>
+                <div id="sumContent">
+                    <span id="imagesrc"><img src="" alt="" id="icon"></span>
+                    <!--<p id="current">Currently:</p>-->
+                    <p><span id="currently"></span></p>
+                    <p id="temp">Temperature:</p>
+                    <p><span id="current-temp"></span> &#8457;</p>
+                    <p id="windch">Wind Chill:</p>
+                    <p><span id="wind_chill"></span> &#8457;</p>
+                    <p id="humid">Humidity: </p>
+                    <p><span id="humidity"></span> %</p>
+                    <p id="winds">Wind Speed:</p>
+                    <p><span id="wind_speed"></span> mph</p>
+                </div>
+            </section>
+        </div>
+        <div class="fiveDay">
+            <h3>5-Day Forecast</h3>
+           
+            <table>
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">78&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">81&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">83&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">80&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">77&#176;F</td>
+                </tr>
+              </table>
+        </div>
+        <div class="article">
+            <img id="articleImg" src="images/sodas2.jpg" alt="Welcome to Soda Springs">
+            <h2>Two Winter storms forecast to hit East Idaho this week</h2>
+            <h4 id="author">by Journal Staff</h4>
+            <p id="articleContent">
+                Snow is in the forecast for East Idaho this week. 
+                The first storm is expected to arrive in the region late Monday morning and 
+                to continue through Tuesday morning. The second storm is forecast to hit East Idaho 
+                starting Wednesday night and to continue through Thursday night.
+                Both storms are expected to bring snow to both the lower and higher elevations of East Idaho. 
+                It's also possible that the Monday-Tuesday storm could bring thunder to the region.
+                East Idaho's higher elevations including Island Park, Spencer, Ashton, Montpelier, Soda Springs, 
+                Lava Hot Springs, Inkom, Arbon, Driggs, Victor and Swan Valley are forecast to receive the most 
+                snow — 2 to 4 inches from each of the two storms. The Monday-Tuesday storm is expected to bring 
+                up to an inch of snow along with rain to the Pocatello, Chubbuck, Preston, Malad, American Falls, 
+                Aberdeen, Fort Hall, Burley, Rupert, Raft River and Blackfoot areas, while the Idaho Falls, Ammon, 
+                Rexburg, Rigby and St. Anthony areas could receive up to 2 inches of snow from the storm. 
+                The Wednesday-Thursday storm is forecast to bring up to 2 inches of snow to all of East Idaho's lower 
+                elevations including the region's largest cities — Pocatello, Chubbuck, Blackfoot, Idaho Falls, Ammon 
+                and Rexburg. Rain is also possible in the lower elevations during the Wednesday-Thursday storm.
+                Both storms are expected to dump snow on the central Idaho mountains including the Hailey, Challis, 
+                Mackay, Salmon, Sun Valley, Ketchum and Stanley areas. While neither storm has yet triggered any 
+                winter weather warnings in East Idaho or in the central Idaho mountains, winter weather advisories 
+                calling for snow are in effect in North Idaho as well as in Montana, Oregon, Washington state and 
+                Nevada, while all of Utah and most of Wyoming are under hazardous weather alerts in anticipation of 
+                the incoming storms.
+
+                Stay with idahostatejournal.com for the latest updates on this developing weather story.  
+            </p>
+        </div>
+        <div class="sections mapbox">
+            <img id="map" src="images/bearLake.png" alt="city info">
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <h3>Breezing Forecast</h3>
+
+                <p>📍 30 N 1st E<br>
+                    Preston, ID 82363<br>
+                    📧 <a href="info@breezing.forecast.com">info@breezing.forecast.com</a><br>
+                    📞 001-123-56789</p><br>
+            </section>
+        </div>
+    </main>
+    <footer> &copy;2021 | Weather data obtained from <a href="https://openweathermap.org/"> OpenWeatherMap.org</a>
+        | Richard Essumang <br>
+        South Africa | <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br>
+        <div id="updated"><span id="currentdate"></span></div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/chill.js"></script>
+    <script src="js/weatherapi.js"></script>
+</body>
+
+</html>

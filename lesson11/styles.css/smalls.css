@@ -1,0 +1,123 @@
+html {
+    background-color: rgb(233, 231, 219);
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 100%;  
+}
+header{
+    font-family: monospace;
+    background-color: rgb(136, 185, 87);
+    padding: 1%;
+    font-family: serif;
+    content: normal;
+    width: 100%;
+    position:relative;
+}
+nav{
+    width: 100%;
+    position:relative;
+    left:-10px;
+    top: 0 auto;
+    background-color: #cfabcb;
+    color:#FAFAFA;
+    padding: 0.9px;
+}
+.nav ul li.active a{
+    color:goldenrod;
+    margin: 0;
+}
+ul{ 
+    padding-left:initial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+}
+.navBar li:first-child {
+    display: block;
+}
+.navBar li{
+    display:none;
+}
+li{
+    font-family: 'Lora', serif;
+    padding: 0;
+    flex:1;
+    list-style-type: none;
+    height:100%;
+}
+
+.responsive li {
+	display: block;
+}
+#logo{
+    position: relative;
+    height: fit-content;
+    column-width: auto;
+    width:5%;
+    float: left;
+    left: 38%;
+    image-resolution: 20px;
+}    
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font: bolder;
+}
+#motto {
+    font: message-box;
+    text-align: center;
+    color: red;
+}
+main {
+    background-color: rgb(166, 233, 241);
+    padding: px;
+    border-radius: 10px;
+    margin: 2px auto;
+    box-shadow: 4px 4px 6px rgb(128, 146, 240);
+    max-width: auto;
+}
+nav a:hover {
+    color: rgb(15, 54, 139);
+    text-shadow: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+.container {
+    margin: 1rem auto; 
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-area: auto;
+    max-width: 1048px; 
+}
+figure{
+    text-align: center;
+    margin: 0.5 auto;
+    border: 1px solid red;
+}
+img { 
+    width: 180px; 
+    height: auto; 
+    margin: 0rem; 
+}
+#img[data-src] {
+    filter: blur(0.1em);
+}  
+#img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+figcaption {
+    font-style: italic;
+    color: royalblue;
+}
+footer{
+    background-color: #1e56a0;
+    color: #FAFAFA;
+    width: 100%;
+    position:relative;
+    bottom:0;
+    padding:1%;
+    text-align:center;
+}

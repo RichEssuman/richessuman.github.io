@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en=us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Forecast</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css/smallp.css">
+    <link rel="stylesheet" href="styles.css/mediump.css">
+    <link rel="stylesheet" href="styles.css/largep.css">
+    <link rel="stylesheet" href="styles.css/normalize.css">
+</head>
+<body>
+    <aside id="alertContainer" style="display: none;">
+        <p id="alert">Saturday = Preston Park Pizza!<br>
+        1:00 p.m. Saturday at the city park.</p>
+    </aside>
+    <header>
+      <a href="#"><img src="images/Weather (1).png" alt="pic" id="logo"></a>
+      <h1>Breezing Forecast</h1>
+      <div id="motto"><em>Be Mindful of the Weather!</em></div>
+    </header>
+    <nav>
+        <ul class="navBar">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="preston.html">Preston</a></li>
+            <li><a href="soda_s.html">Soda Springs</a></li>
+            <li><a href="fish_haven.html" >Fish Haven</a></li>
+            <li><a href="stormcenter.html" >Storm Center</a></li>
+            <li><a href="gallery.html" >Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h2 id="h2flag">Preston, Idaho</h2>
+      <div class="heroDiv">
+          <picture>
+              <source srcset="images/PicLarg.jpg" media="(min-width:60em)">
+              <source srcset="images/picMedium.jpg" media="(min-with:32.5em) and (max-width:60em)"> 
+              <img id="heroImg" src="images/picSmall.jpg" alt="cover">
+          </picture>
+    
+        <section class="casting">
+          <h4 id="weatherSum">Weather Summary</h4>
+          <div id="sumContent">
+            <p id="Currently" class="leftSum">Currently:</p>  
+            <p id="Currently1" class="rightsum">Sunny</p>
+
+            <p id="temperature" class="leftSum">Temperature:</p>
+            <p id="temperature1" class="rightSum">72&#176;F</p>
+
+              <p id="windchill" class="leftSum">Wind Chill:</p>
+              <p id="windchill1" class="rightSum">76&#176;F</p>
+
+              <p id="humidity" class="leftSum">Humidity:</p>
+              <p id="humidity2" class="rightSum">80%</p>
+
+              <p id="windSpeed" class="leftSum">Wind Speed:</p>
+              <p id="windSpeed2" class="rightSum">15 mph S</p>
+          </div>
+        </section>
+      </div>
+      <div class="forecast">
+          <h3 id="forecastheader">5 Day Forecast</h3>
+          <table>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td><img class="sunny" src="images/favicon.ico" alt="sunny">78&#176;F</td>
+                <td><img class="sunny" src="images/favicon.ico" alt="sunny">81&#176;F</td>
+                <td><img class="sunny" src="images/favicon.ico" alt="sunny">83&#176;F</td>
+                <td><img class="sunny" src="images/favicon.ico" alt="sunny">80&#176;F</td>
+                <td><img class="sunny" src="images/favicon.ico" alt="sunny">77&#176;F</td>
+            </tr>
+          </table>
+      </div>
+      <div class="article">
+        <img id="articleImg" src="images/foundersday2014.jpg" alt="foundersDay">
+        <h2>Founders Day Celebrations</h2>
+        <h4 id="author">by Author's name</h4>
+        <p id="articleContent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
+            inventore! Velit blanditiis, dolor fugiat quis voluptas eveniet 
+            consectetur corporis odit labore ipsum dolorem dolore quod 
+            aliquid eos saepe id, eius unde magnam, rerum sint nobis sapiente! 
+            Delectus illum, laudantium error, mollitia amet excepturi 
+            ratione iure totam debitis obcaecati, saepe sit numquam ipsa 
+            ab fuga unde sint voluptas neque est praesentium optio quidem 
+            vel porro possimus? Unde, dolores repellendus voluptate, praesentium
+            molestiae deserunt tempora inventore cum veniam assumenda facere 
+            sapiente quia hic reiciendis mollitia atque vitae consequatur, 
+            omnis necessitatibus? Voluptatibus, consequuntur. Distinctio 
+            neque sequi qui animi! Incidunt repellendus molestias id quisquam 
+            obcaecati aliquam nobis nemo consequuntur, soluta eveniet dolores 
+            perspiciatis tempore omnis deleniti laborum saepe iure minus 
+            suscipit neque velit deserunt cum nihil ab? Sed eius laboriosam 
+            incidunt dicta fugiat excepturi corrupti possimus culpa nobis ullam, 
+            nulla, in officia itaque officiis nisi enim consequatur, praesentium 
+            impedit saepe ex? Quas, ut culpa alias incidunt nam iste similique 
+            officia. Quidem similique modi quam molestiae reiciendis consequuntur 
+            consequatur nulla at iure sed! Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Tempora, nobis ipsam fuga eligendi corrupti explicabo 
+            provident placeat iure, eveniet sunt minus. Consequatur, magnam. Repellendus, ipsam.
+        </p>
+    </div>
+    <hr>
+          <div class="map">
+              <img id="mapImg" src="images/bearLake.png" alt="cityinfo">
+              <section id="mapInfo">
+                  <h2>Contact Us</h2>
+                  <h3>Breezing Forecast</h3>
+                  <img src="images/525-5254651_small-google-map-icon-clipart.png" id="locationImg" alt="locationpin"> 30 N 1st E<br>
+                  Preston, ID 83263</p>
+                  <p id="phone">001-123-56789</p>
+                  <p id="email">info@breezing.forecast.com</p>
+                <div class="icons">
+            </div>
+    </main>
+    <footer>
+        <div class=footerInfo>
+            &copy;2021 Richard Essumang  |  Breezing Forecast | Attributions |  South Africa
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script type="text/javascript" src="script.js/script.js"></script>
+    <script type="text/javascript" src="script.js/function.js"></script>
+</body>
+</html>

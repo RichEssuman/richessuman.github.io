@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Forecast</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="styles.css/small.css" rel="stylesheet">
+    <link href="styles.css/medium.css" rel="stylesheet">
+    <link href="styles.css/large.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="#"><img src="images/Weather (1).png" alt="pic" id="logo"></a>
+        <section class="headings">
+            <h1>Breezing Forecast</h1>
+            <div id="motto"><em>Be Mindful of the Weather!</em></div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navBar">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda_s.html">Soda Springs</a></li>
+            <li><a href="fish_haven.html" >Fish Haven</a></li>
+            <li><a href="stormcenter.html" >Storm Center</a></li>
+            <li><a href="gallery.html" >Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Breezing Forecast</h1>
+        <div class="hero">
+            <picture>
+                <img id="heroImg" src="images/head.jpg" alt="">
+            </picture>
+        </div>
+
+        <section>
+             <h3>Fish Haven</h3>
+             <motto>This is Fish Haven</motto>
+             <yearfounded>Founded in: 1864</yearfounded>
+             <currentpopulation>Population: 501</currentpopulation>
+             <averagerainfall>Annual Rainfall: 14.2</averagerainfall>
+             <img src="images/fish h.jpg" alt="fishhaven picture">
+        </section>
+        <section>
+            <h3>Preston</h3>
+            <motto>Home of Napoleon Dynamite</motto>
+            <yearfounded>Founded in: 1866</yearfounded>
+            <currentpopulation>Population: 5204</currentpopulation>
+            <averagerainfall>Annual Rainfall: 16.65</averagerainfall>
+            <img src="images/preston.jpg" alt="Preston picture">
+        </section>
+        <section>
+            <h3>Soda Spring</h3>
+            <motto>Historic Oregon Trail Oasis: The Soda is on Us</motto>
+            <yearfounded>Founded in: 1858</yearfounded>
+            <currentpopulation>Population: 2985</currentpopulation>
+            <averagerainfall>Annual Rainfall: 15.75</averagerainfall>
+            <img src="images/soda s.jpg" alt="sodasprings picture">
+        </section>
+        <div class="article">
+            <img id="articleImg" src="images/foundersday2014.jpg" alt="foundersDay">
+            <h2>Founders Day Celebrations</h2>
+            <h4 id="author">by Author's name</h4>
+            <p id="articleContent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
+                inventore! Velit blanditiis, dolor fugiat quis voluptas eveniet 
+                consectetur corporis odit labore ipsum dolorem dolore quod 
+                aliquid eos saepe id, eius unde magnam, rerum sint nobis sapiente! 
+                Delectus illum, laudantium error, mollitia amet excepturi 
+                ratione iure totam debitis obcaecati, saepe sit numquam ipsa 
+                ab fuga unde sint voluptas neque est praesentium optio quidem 
+                vel porro possimus? Unde, dolores repellendus voluptate, praesentium
+                molestiae deserunt tempora inventore cum veniam assumenda facere 
+                sapiente quia hic reiciendis mollitia atque vitae consequatur, 
+                omnis necessitatibus? Voluptatibus, consequuntur. Distinctio 
+                neque sequi qui animi! Incidunt repellendus molestias id quisquam 
+                obcaecati aliquam nobis nemo consequuntur, soluta eveniet dolores 
+                perspiciatis tempore omnis deleniti laborum saepe iure minus 
+                suscipit neque velit deserunt cum nihil ab? Sed eius laboriosam 
+                incidunt dicta fugiat excepturi corrupti possimus culpa nobis ullam, 
+                nulla, in officia itaque officiis nisi enim consequatur, praesentium 
+                impedit saepe ex? Quas, ut culpa alias incidunt nam iste similique 
+                officia. Quidem similique modi quam molestiae reiciendis consequuntur 
+                consequatur nulla at iure sed! Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Tempora, nobis ipsam fuga eligendi corrupti explicabo 
+                provident placeat iure, eveniet sunt minus. Consequatur, magnam. Repellendus, ipsam.
+            </p>
+        </div>
+    </div>
+    <div class="sections mapbox">
+        <img id="map" src="images/bearLake.png" alt="city info">
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <h3>Breezing Forecast</h3>
+
+            <p>📍 30 N 1st E<br>
+                Preston, ID 82363<br>
+                📧 <a href="info@breezing.forecast.com">info@breezing.forecast.com</a><br>
+                📞 001-123-56789</p><br>
+        </section>
+    </div>
+    </main>
+    <footer> &copy;2021 | Weather data obtained from <a href="https://openweathermap.org/"> OpenWeatherMap.org</a>
+        | Richard Essumang <br>
+        South Africa | <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br>
+        <div id="updated"><span id="currentdate"></span></div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/json.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+
+</html>

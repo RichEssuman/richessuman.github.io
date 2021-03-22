@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Forecast</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css/smallh.css">
+    <link rel="stylesheet" href="styles.css/mediumh.css">
+    <link rel="stylesheet" href="styles.css/largeh.css">
+    <link rel="stylesheet" href="styles.css/normalize.css">
+</head>
+
+<body onload="getChilled()">
+    <aside id="pancakes" style="display: none;">
+        <p id="alert">Saturday = Preston Park Pizza!<br>
+            1:00 p.m. Saturday at the city park.</p>
+    </aside>
+    <header>
+        <a href="#"><img src="images/Weather (1).png" alt="pic" id="logo"></a>
+        <section class="headings">
+            <h1>Breezing Forecast</h1>
+            <div id="motto"><em>Be Mindful of the Weather!</em></div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navBar">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda_s.html">Soda Springs</a></li>
+            <li><a class="active" href="fish_haven.html" >Fish Haven</a></li>
+            <li><a href="stormcenter.html" >Storm Center</a></li>
+            <li><a href="gallery.html" >Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Fish Haven, Idaho</h2>
+        <div class="heroDiv">
+            <picture>
+                <source srcset="images/fishha1.jpg" media="(min-width:60em)">
+                <source srcset="images/fishha1.jpg" media="(min-with:32.5em) and (max-width:60em)"> 
+                <img id="heroImg" src="images/fishha1.jpg" alt="cover">
+            </picture>
+            <section class="stats">
+                <h2 id="summary">Current Weather</h2>
+                <div id="sumContent">
+                    <span id="imagesrc"><img src="" alt="" id="icon"></span>
+                    <!--<p id="current">Currently:</p>-->
+                    <p><span id="currently"></span></p>
+                    <p id="temp">Temperature:</p>
+                    <p><span id="current-temp"></span> &#8457;</p>
+                    <p id="windch">Wind Chill:</p>
+                    <p><span id="wind_chill"></span> &#8457;</p>
+                    <p id="humid">Humidity: </p>
+                    <p><span id="humidity"></span> %</p>
+                    <p id="winds">Wind Speed:</p>
+                    <p><span id="wind_speed"></span> mph</p>
+                </div>
+            </section>
+        </div>
+        <div class="fiveDay">
+            <h3>5-Day Forecast</h3>
+           
+            <table>
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">78&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">81&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">83&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">80&#176;F</td>
+                    <td><img class="sunny" src="images/favicon.ico" alt="sunny">77&#176;F</td>
+                </tr>
+              </table>
+        </div>
+        <div class="article">
+            <img id="articleImg" src="images/fishha2.jpg" alt="This is Fish Haven">
+            <h2>Best Things To Do in Fish Haven, Idaho</h2>
+            <h4 id="author">by Author's name</h4>
+            <p id="articleContent">
+                Have you ever visited a new place and felt ‘wow’ about it? For many visitors, 
+                it happens at Fish Haven. Fish Haven may not be as popular as other cities 
+                in United States, but don’t let that fool you. Fish Haven is a smaller but 
+                beautiful upcoming tourist destination that is worth a visit. You will 
+                be surprised by some of the unique things to do and places you can explore 
+                at this hidden destination. You might wish to revisit it someday again, to 
+                take a break and relax at Fish Haven. If you have plans to visit United 
+                States and are not sure if Fish Haven should be included in your itinerary, 
+                keep reading. In this list, we have put together some of the things to do in 
+                Fish Haven and around. We have a hunch that if you include this city in your 
+                travel plans, you will be thrilled you did so.
+            </p>
+        </div>
+        <div class="sections mapbox">
+            <img id="map" src="images/bearLake.png" alt="city info">
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <h3>Breezing Forecast</h3>
+
+                <p>📍 30 N 1st E<br>
+                    Preston, ID 82363<br>
+                    📧 <a href="info@breezing.forecast.com">info@breezing.forecast.com</a><br>
+                    📞 001-123-56789</p><br>
+            </section>
+        </div>
+    </main>
+    <footer> &copy;2021 | Weather data obtained from <a href="https://openweathermap.org/"> OpenWeatherMap.org</a>
+        | Richard Essumang <br>
+        South Africa | <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br>
+        <div id="updated"><span id="currentdate"></span></div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/chill.js"></script>
+    <script src="js/weatherapi.js"></script>
+</body>
+
+</html>
