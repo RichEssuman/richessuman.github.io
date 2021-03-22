@@ -47,36 +47,21 @@
         /*box-shadow: darkgrey 4px 4px 10px 10px;*/
     }
     
-    .cards section {
+    #cards section {
         background-color:rgb(170, 184, 248);
         display: flex;
         flex-direction: column;
         text-align: center;
         flex: 1;
-        border: solid rgb(57, 64, 97) .25rem;
-        box-shadow: 0 0 10 #333;
+        border: solid rgb(95, 114, 206) .25rem;
+        box-shadow: 0 0 10 rgb(184, 131, 131);
         margin: 1rem;
-        background-color: whitesmoke;
+        background-color: rgb(218, 97, 97);
     }
     
-    .cards section img {
+    section img {
         border: solid black 1px;
         margin:auto;
         max-width: 400px;
         max-height: 300px;
     }
-    
-   /* .cards {
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-   
-    .cards img {
-        grid-column: 1;
-        grid-row: 2;
-    }*/
-
-  
-
-    
-}

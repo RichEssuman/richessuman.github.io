@@ -16,19 +16,19 @@
         margin-left: 17px;
     }
 
-    .navigation {
+    .navBar {
         display: flex;
 
     }
 
-    .navigation li {
+    .navBar li {
         display: block;
         flex: 1 1 50%;
         padding: 0 10px;
         text-shadow: 3px 3px 8px #999;
     }
 
-    .navigation li:first-child {
+    .navBar li:first-child {
         display: none;
     }
 
@@ -73,8 +73,8 @@
         max-width: 100%;
         margin: auto;
         vertical-align: top;
-        /* margin: 0 0 2rem;
-        }*/
+        margin: 0 0 2rem;
+        
     }
 
     .mapbox #map {
