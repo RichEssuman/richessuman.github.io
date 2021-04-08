@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en=us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Second Chance Development</title>
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <a href="#"><img src="images/second chance.jpg" alt="pic" id="logo"></a>
+        <section class="headings">
+            <h1>Second Chnace Youth Skills Development Center</h1>
+            <div id="motto"><em>There is Hope For All!</em></div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navBar">
+            <li><a href="final.html">Second Chance Youth</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" >Gallery</a></li>
+            <li><a class="active" href="enrolment.html" >Pre-erolment 2022</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h1>Pre-Enrolment Forms</h1>
+      <form method="get" action="getAll">
+        <fieldset>
+            <legend>Parent/Guardian Contact Information</legend>
+            <p><small>*(required fields)</small></p>
+            <label class="top" for="Title">Title (Please Select &#9662;)
+                <input list="title" name="Title" id="Title">
+                <datalist id="Title">
+                    <option>Mr.</option>
+                    <option>Mrs/Miss</option>
+                    <option>Single</option>
+                </datalist>
+            </label>
+            <label class="top">Full Name* <input type="text" name="fname" required pattern=".{5,}"></label>
+            <label class="top">ID Number*<input type="number" name="id" required></label>
+            <label class="top">Phone* <input type="tel" name="phone" placeholder="+27" required></label>
+            <label class="top">Zip Code*<input type="number" name="zip" required></label>
+            <label class="top">Email <input type="email" name="email" placeholder="myname@gmail.com"></label> 
+        </fieldset>
+        <fieldset>
+            <legend>Student/Learner Information</legend>
+            <p><small>*(required fields)</small></p>
+            <label class="top">Full Name* <input type="text" name="fname" required pattern=".{5,}"></label>
+            <label class="top">ID Number*<input type="number" name="id" required></label>
+            <label class="top">Age* <input type="number" name="age" placeholder="" required></label>
+            <label class="top">Special Attention*<input type="needs" name="Special" required></label>
+            <label class="top">Gender* <input type="gender" name="gender" placeholder="     "></label> 
+        </fieldset>
+        <fieldset>
+            <legend>Confirmation</legend>
+            
+            <div class="top">Are you sure of your enrolment?</div>
+            <label class="rad"><input type="radio" id="yes" name="danger" value="yes">Yes!</label>
+            <label class="rad"><input type="radio" id="maybe" name="danger" value="maybe">Maybe</label>
+            <label class="rad"><input type="radio" id="no" name="danger" value="no">No</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Type Any Additional Information Here</legend>
+            <label class="top">
+                <textarea id="addinfo" name="addinfo"></textarea>
+            </label>
+        </fieldset>
+    </main>
+    <footer>
+        <div class=footerInfo>
+            &copy;2021 Second Chance Youth Skills  |  an NPO |  South Africa
+            <br>developed by Richard Essumang<b>
+        <div id="updated">Updated: <span id="currentdate"></span></div>
+    </footer>
+    <script type="text/javascript" src="js/currentdate.js"></script>
+</body>
+</html>

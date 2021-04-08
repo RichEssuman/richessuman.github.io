@@ -1,0 +1,458 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    background-color: rgb(235, 231, 177);
+    padding: 5px;
+    border-radius: 1px;
+    margin: 5px auto;
+    box-shadow: 4px 4px 6px rgb(106, 190, 223);
+    max-width: 860px;
+}
+
+p {
+    font-family: 'PT Serif', serif;
+    font-weight: bolder;
+}
+
+header,
+footer {
+    background-color: rgb(243, 224, 138);
+    color: rgb(228, 78, 78);
+    border: 8px rgb(170, 184, 248);
+    border-radius: 10px;
+    margin: 12px;
+    box-shadow: 4px 4px 6px rgb(131, 147, 230);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 2px 24px;
+}
+
+header img {
+    width: 0px;
+    height: auto;
+    margin: 2px 30px 0 0;
+}
+
+#logo {
+    padding-left: 1rem;
+
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: .25rem .25rem .25rem 0;
+}
+
+.headings h1,
+.motto {
+    text-shadow: 3px 3px 5px black;
+}
+
+h1,
+h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding: .75rem;
+    margin: 0 0 0 2px;
+    text-align: center;
+}
+
+.motto {
+    font-style: normal;
+    letter-spacing: 1pt;
+    color: rgb(133, 144, 197);
+    margin-left: 20px;
+    font-size: xx-small;
+}
+
+nav {
+    margin: 0 auto;
+    /*width: fit-content;*/
+    font-size: 18px;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navBar li:first-child {
+    display: block;
+}
+
+.nav li {
+    display: none;
+}
+
+.nav a {
+    display: block;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    border-top: solid rgba(0, 0, 0, .3);
+}
+
+.nav a:hover {
+    color: salmon;
+    text-shadow: none;
+}
+
+.responsive li {
+    display: block;
+}
+#updated {
+    font-size: 12px;
+    color: rgba(228, 35, 9, 0.897);
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+footer a:visited {
+    color: rgb(170, 184, 248);
+}
+
+footer a:hover {
+    color: salmon;
+}
+
+footer {
+    padding: 12px;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+div.sections,
+div.sections2 {
+    background-color: whitesmoke;
+    padding: 12px;
+    border: solid 3px rgba(2, 24, 22, 0.322);
+    margin: 20px;
+    justify-items: center;
+}
+
+div.sections2 {
+    display: flex;
+}
+
+div.sections2 img {
+    border: none;
+    margin: 12px;
+    max-height: 40px;
+    max-width: 45px;
+}
+
+.sections img {
+    width: 50%;
+    margin: 0 auto 2rem;
+}
+
+.sections p {
+    padding: .25rem;
+    margin: .25rem;
+}
+
+.sections p a {
+    white-space: pre;          
+	white-space: pre-wrap;    
+	white-space: pre-line;      
+	white-space: -pre-wrap;    
+	white-space: -o-pre-wrap;   
+	white-space: -moz-pre-wrap; 
+	white-space: -hp-pre-wrap; 
+	word-wrap: break-word;     
+}
+
+
+.sections h3 {
+    padding: 1rem 1rem 0 1rem;
+    margin: 6px 24px 0 28px;
+}
+
+.sections ul li {
+    list-style: none;
+    padding: 6px;
+}
+
+.hero {
+    position: relative;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.hero h1,
+h2,
+p {
+    margin: .15rem auto;
+    text-align: center;
+  
+}
+
+
+.hero img {
+    width: 50%;
+    margin: .75rem auto;
+    border: solid black 1px;
+    
+}
+
+.sections #map {
+    display: none
+}
+
+.stats {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background: radial-gradient( rgb(84, 112, 248), rgb(170, 184, 248));
+    padding: .25rem 1rem;
+    border: solid black 1.5px;
+    box-shadow: 0 0 20px black;
+    opacity: 88%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#sumBox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    margin-top: 0;
+}
+
+#pancakes {
+    /*display: none;*/
+    background-color: salmon;
+    font-family: 'PT Serif', serif;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.25em;
+    border: solid rgb(57, 64, 97) 3px;
+    box-shadow: 0 0 20px black;
+
+}
+
+#pancakesinfo {
+    line-height: 1.75rem;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: auto;
+    line-height: 1.5rem;
+    padding: 50px;
+
+}
+
+.links {
+    max-width: 40px;
+    padding: 0 3px;
+}
+
+.active {
+    font-size: 1.75rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 6px;
+
+}
+
+.gallery figure {
+    border: rgb(84, 112, 248) dotted 2px;
+    margin: 6px;
+}
+
+
+.gallery figure img {
+    min-width: 200px;
+    min-height: 150px;
+    border: darkblue dotted 1px;
+    margin: 20px auto 0;
+
+}
+
+.gallery figure p {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure img {
+    filter: blur(0);
+    transition: filter .025s;
+}
+
+.top {
+    display: block;
+    padding: .75rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+
+}
+
+form label.top input,
+form label.top option,
+input.top,
+select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1.5px rgb(84, 112, 248);
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+fieldset {
+    border-color: rgb(57, 64, 97);
+    margin-top: 1.5rem;
+
+}
+
+form label.top input:required {
+    border-left: salmon solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: rgb(84, 112, 248) solid 6px;
+
+}
+
+label input,
+label select {
+    margin-top: .5rem;
+}
+
+#ratingvalue {
+    display: block;
+    font-size: 1rem;
+    margin-left: .8rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.rad {
+    display: block;
+    padding: .25rem .75rem;
+    cursor: pointer;
+}
+
+label.rad input {
+    margin: .25rem 1rem;
+}
+
+textarea {
+    width: 100%;
+    max-width: 50rem;
+    min-height: 10rem;
+}
+
+.submit {
+    border-radius: 4px;
+    border: 4px solid rgb(57, 64, 97);
+    background-color: salmon;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.submit:hover {
+    background-color: rgb(57, 64, 97);
+    color: salmon;
+    box-shadow: #555 6px 6px 16px;
+}
+
+p small {
+    margin-left: .75rem;
+}
+
+.cards {
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.cards1, .cards2, .cards3 {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    padding-top: 1rem;
+}
+
+ .cards1 section, .cards2 section, .cards3 section {
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+    margin: .25rem;
+    padding: .75rem;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.cards1 section h2, .cards2 section h2, .cards3 section h2 {
+padding: .5rem .5rem 1rem;
+margin: auto;
+}
+
+.cards section {
+    background-color: rgb(76, 223, 76);
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    flex: 1;
+    border: solid rgb(176, 219, 165) .25rem;
+    box-shadow: 0 0 10px rgb(203, 240, 229);
+    margin: 1rem;
+    background-color: whitesmoke;
+}
+
+motto {
+    font-style: normal;
+    font-size: xx-small;
+    padding: .75rem;
+}
+
+#summary {
+    margin: 0;
+}
+
+p a:hover {
+   color: salmon;
+   text-shadow: 3px 3px 20px #999;
+}
